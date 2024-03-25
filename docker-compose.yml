@@ -1,7 +1,8 @@
 version: '3.8'
-
-services:
+services: 
   app:
+    environment:
+      - QR_CODE_DIR=qr_codes2
     build:
       context: .
       dockerfile: Dockerfile
